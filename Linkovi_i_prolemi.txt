@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/57891751/webpacker-configuration-file-not-found-rails-6-0-0
+
+[Konfiguracija servera da mi radi s ostalim uredajima]
+https://stackoverflow.com/questions/2019884/how-to-connect-to-a-localhost-rails-site-via-mobile-device-locally

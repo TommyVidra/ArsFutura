@@ -2,3 +2,4 @@ https://stackoverflow.com/questions/57891751/webpacker-configuration-file-not-fo
 
 [Konfiguracija servera da mi radi s ostalim uredajima]
 https://stackoverflow.com/questions/2019884/how-to-connect-to-a-localhost-rails-site-via-mobile-device-locally
+ rails server -b 0.0.0.0 

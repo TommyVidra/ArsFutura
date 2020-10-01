@@ -1,6 +1,7 @@
 
 let btn = document.getElementById('addNew');
 let tasks = document.getElementsByClassName('task');
+
 btn.onclick = function()
 {
     if(document.getElementById('toDo').classList == "")
@@ -36,7 +37,8 @@ btn.onclick = function()
 
     });
 }
-function memSort(e){
+function memSort(e)
+{
     var key=e.keyCode || e.which;
     if (key==13){
         alert("Enter was pressed ");

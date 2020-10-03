@@ -4,7 +4,7 @@ newList.onclick = function ()
 {
     let toDos = document.getElementById('container');
 
-    if (document.getElementById('listName') != "")
+    if (document.getElementById('listName') == null)
     {
         let inputName = document.createElement('input');
         inputName.setAttribute('type', 'text');
@@ -12,15 +12,17 @@ newList.onclick = function ()
         inputName.setAttribute('class', 'text_input');
 
         toDos.appendChild(inputName);
+
+        let tmpSubmitBtn = document.createElement('button');
+        tmpSubmitBtn.setAttribute('id', 'submit');
+        toDos.appendChild(tmpSubmitBtn);
     }
 
-    let tmpSubmitBtn = document.createElement('button');
-    tmpSubmitBtn.setAttribute('id', 'submit');
-    toDos.appendChild(tmpSubmitBtn);
 
+    let tmpSubmitBtn = document.getElementById('submit');
     tmpSubmitBtn.addEventListener('click', (evt) => {
         let inputName =  document.getElementById('listName');
-        if(inputName.value == ""){
+        if(inputName.value === ""){
             toDos.removeChild(inputName);
             toDos.removeChild(tmpSubmitBtn);
             alert("The input is empty");

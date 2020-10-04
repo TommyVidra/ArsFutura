@@ -21,6 +21,66 @@
        /*margin: auto;*/
    }
 }
+.btn{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 250px;
+    border-radius: 18px;
+    background-color: #2e3f46;
+}
+.btn a{
+    position: center;
+    color: snow;
+}
+#delete{
+    width: 100px;
+    border-radius: 18px;
+    display: block;
+    text-align: center;
+    background-color: firebrick;
+    margin-left: 16px;
+}
+#delete p{
+    position: center;
+}
+#delete a{
+    position: center;
+    /*text-align: center;*/
+    color: snow;
+}
+.field label{
+    margin-right: 16px;
+}
+input[type="submit"]{
+    font-family: 'Epilogue';
+    background-color: #2e3f46;
+    border: none;
+    color: white;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3vw;
+    display: inline-block;
+    font-size: 1.5vw;
+    transition-duration: 0.2s;
+    outline: none;
+}
+
+form{
+    text-align: center;
+    position: relative;
+    /*margin: auto;*/
+    width: 100%;
+    place-items: center;
+}
+
+.section{
+    position: center;
+    width: 100%;
+    /*place-items: center;*/
+}
 
 body {
     font-family: 'Dosis';

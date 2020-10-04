@@ -1,0 +1,25 @@
+<div id="container">
+  <img id="header" src="/images/ragu6.jpg" >
+  <div><%= @list.name %></div>
+</div>
+
+
+<div id="main-content">
+  <div class="content">
+    <div id="toDo">
+      <h3>Here are your tasks</h3>
+    </div>
+    <div id="doneTasks">
+      <h3>Here are your done tasks</h3>
+    </div>
+  </div>
+  <button id='addNew'><i></i> New task</button>
+  <div id="delete">
+  <p class="level-item">
+    <%= link_to "Delete", list_path(@list), method: :delete, data: { confirm: "Are you sure?" }, class:"button is-danger" %>
+  </p>
+</div>
+</div>
+
+
+<%= javascript_pack_tag 'note' %>

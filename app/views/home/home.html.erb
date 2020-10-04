@@ -1,8 +1,9 @@
 <h1>Home#home</h1>
 <p>Find me in app/views/home/home.html.erb</p>
 
-<%#= button_to "Map", home_new_path, id: 'random_id', remote: true, method: :get %>
+<%= link_to "Map", home_new_path, id: 'random_id' %>
+<%= link_to "Delete", home_delete_path(@guid, :type => "027aff2c-5885-4546-bab6-b2c9d56b3c95"), id:'rand' %>
 <div id="container"></div>
-<button id='newList'>new task</button>
+<!--<button id='newList'>new task</button>-->
 
-<%= javascript_pack_tag 'list' %>
+<%= javascript_pack_tag 'lists' %>

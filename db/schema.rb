@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_30_171355) do
+ActiveRecord::Schema.define(version: 2020_10_04_211045) do
 
   create_table "lists", force: :cascade do |t|
     t.string "guid"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "name"
   end
 
   create_table "pages", force: :cascade do |t|
